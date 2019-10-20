@@ -1,0 +1,211 @@
+\hypertarget{classADTree}{
+\section{ADTree$<$ Shape $>$ Class Template Reference}
+\label{classADTree}\index{ADTree@{ADTree}}
+}
+
+
+Alternating binary range searching tree.  
+
+
+{\ttfamily \#include $<$adtree.hpp$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classADTree_a77cc7dfe39cabdd41316ff2e7dcfccd0}{ADTree} ()
+\item 
+\hyperlink{classADTree_aa66f88d51019999814be20c17663fc29}{ADTree} (\hyperlink{classTree__Header}{Tree\_\-Header}$<$ Shape $>$ const \&header)
+\item 
+\hyperlink{classADTree_aec2a21cd072f346853968b5b9cf9cee5}{ADTree} (Real const $\ast$const points, UInt const $\ast$const triangle, UInt num\_\-nodes, UInt num\_\-triangle)
+\item 
+\hypertarget{classADTree_a56477de2e5128eba39c20000de2eb05b}{
+\hyperlink{classTree__Header}{Tree\_\-Header}$<$ Shape $>$ \hyperlink{classADTree_a56477de2e5128eba39c20000de2eb05b}{gettreeheader} () const }
+\label{classADTree_a56477de2e5128eba39c20000de2eb05b}
+
+\begin{DoxyCompactList}\small\item\em Returns a reference to the tree header. \item\end{DoxyCompactList}\item 
+int \hyperlink{classADTree_a4210646b297dd9b48c273ff2923a2b59}{addtreenode} (Id shapeid, std::vector$<$ Real $>$ const \&coords, std::vector$<$ int $>$ const \&keys)
+\item 
+void \hyperlink{classADTree_a1c1e6da98d9a00a17044d16849dfa2e8}{gettri} (int const \&loc, std::vector$<$ int $>$ \&info, std::vector$<$ Real $>$ \&coord, Id \&id)
+\item 
+\hyperlink{classTreeNode}{TreeNode}$<$ Shape $>$ \hyperlink{classADTree_a4dd7574cdb137f38611311083294a365}{gettreenode} (int const \&loc) const 
+\item 
+bool \hyperlink{classADTree_a1715508210a8a54094125997eb7e19d1}{search} (std::vector$<$ Real $>$ const \&region, std::set$<$ int $>$ \&found) const 
+\item 
+\hypertarget{classADTree_ad0a073992ca29fcc493d4b592a179f3e}{
+void \hyperlink{classADTree_ad0a073992ca29fcc493d4b592a179f3e}{deltreenode} (int const \&index)}
+\label{classADTree_ad0a073992ca29fcc493d4b592a179f3e}
+
+\begin{DoxyCompactList}\small\item\em Deletes a specified location in the tree. \item\end{DoxyCompactList}\item 
+\hypertarget{classADTree_a60abe007e7aac04363741888be4a43ad}{
+Real \hyperlink{classADTree_a60abe007e7aac04363741888be4a43ad}{pointcoord} (int const \&p, int const \&j) const }
+\label{classADTree_a60abe007e7aac04363741888be4a43ad}
+
+\begin{DoxyCompactList}\small\item\em Gets the j-\/th coordinate of the bounding box of the p-\/th object stored in the node. \item\end{DoxyCompactList}\item 
+\hypertarget{classADTree_a683ed97b493d79b3fca4a1666c15998a}{
+Id \hyperlink{classADTree_a683ed97b493d79b3fca4a1666c15998a}{pointId} (int const \&p) const }
+\label{classADTree_a683ed97b493d79b3fca4a1666c15998a}
+
+\begin{DoxyCompactList}\small\item\em Gets the the Id of the original object of the p-\/th treenode. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classADTree_a813a21f8aa0566f8ec70bcef2c4cc748}{adtrb} (Id shapeid, std::vector$<$ Real $>$ const \&coords, std::vector$<$ int $>$ const \&keys)
+\begin{DoxyCompactList}\small\item\em Adds a point to the tree. It throws:. \item\end{DoxyCompactList}\item 
+\hypertarget{classADTree_ac8d1a7e1890bf2dda03e7e1996463510}{
+int \hyperlink{classADTree_ac8d1a7e1890bf2dda03e7e1996463510}{handledomerr} (Id shapeid, std::vector$<$ Real $>$ const \&coords, std::vector$<$ int $>$ const \&keys)}
+\label{classADTree_ac8d1a7e1890bf2dda03e7e1996463510}
+
+\begin{DoxyCompactList}\small\item\em Handles a \hyperlink{classTreeDomainError}{TreeDomainError} exception. \item\end{DoxyCompactList}\item 
+\hypertarget{classADTree_af57ba8e7855a92b06eab7a8ccfda8c95}{
+int \hyperlink{classADTree_af57ba8e7855a92b06eab7a8ccfda8c95}{handletreealloc} (Id shapeid, std::vector$<$ Real $>$ const \&coords, std::vector$<$ int $>$ const \&keys)}
+\label{classADTree_af57ba8e7855a92b06eab7a8ccfda8c95}
+
+\begin{DoxyCompactList}\small\item\em Handles a \hyperlink{classTreeAlloc}{TreeAlloc} exception. \item\end{DoxyCompactList}\item 
+\hypertarget{classADTree_aab479dc4be3ba0ba715efa3902415c88}{
+int \hyperlink{classADTree_aab479dc4be3ba0ba715efa3902415c88}{handleleverr} (Id shapeid, std::vector$<$ Real $>$ const \&coords, std::vector$<$ int $>$ const \&keys)}
+\label{classADTree_aab479dc4be3ba0ba715efa3902415c88}
+
+\begin{DoxyCompactList}\small\item\em Handles a \hyperlink{classLevRuntimeError}{LevRuntimeError} exception. \item\end{DoxyCompactList}\item 
+int \hyperlink{classADTree_a5f5dcde8e682a04c4e8c8c0e6defc595}{searchdim} (int const \&lev, int const \&dim) const 
+\item 
+double \hyperlink{classADTree_a70bf34ef5fddca65b241e9e296e26021}{delta} (int const \&lev, int const \&dim) const 
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classTree__Header}{Tree\_\-Header}$<$ Shape $>$ \hyperlink{classADTree_ab5ed42c46d811ca39c9a6966b974a04b}{header\_\-}
+\item 
+\hypertarget{classADTree_a8d9d14d549f0d88231fa7a4978186b44}{
+std::vector$<$ \hyperlink{classTreeNode}{TreeNode}$<$ Shape $>$ $>$ \hyperlink{classADTree_a8d9d14d549f0d88231fa7a4978186b44}{data\_\-}}
+\label{classADTree_a8d9d14d549f0d88231fa7a4978186b44}
+
+\begin{DoxyCompactList}\small\item\em Vector of tree nodes. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classADTree_a0386e0202ce113c45fc291d6438ce0de}{
+{\footnotesize template$<$class S $>$ }\\std::ostream \& \hyperlink{classADTree_a0386e0202ce113c45fc291d6438ce0de}{operator$<$$<$} (std::ostream \&ostr, \hyperlink{classADTree}{ADTree}$<$ S $>$ const \&myadt)}
+\label{classADTree_a0386e0202ce113c45fc291d6438ce0de}
+
+\begin{DoxyCompactList}\small\item\em Outputs informations contained in the tree header. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class Shape$>$ class ADTree$<$ Shape $>$}
+
+Alternating binary range searching tree. 
+\begin{DoxyParams}{Parameters}
+\item[{\em Shape,:}]template parameter, the original shape \end{DoxyParams}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classADTree_a77cc7dfe39cabdd41316ff2e7dcfccd0}{
+\index{ADTree@{ADTree}!ADTree@{ADTree}}
+\index{ADTree@{ADTree}!ADTree@{ADTree}}
+\subsubsection[{ADTree}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Shape$>$ {\bf ADTree}$<$ Shape $>$::{\bf ADTree} ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classADTree_a77cc7dfe39cabdd41316ff2e7dcfccd0}
+A default constructor.
+
+It initializes the tree header and reserve a suitable number of memory locations to store tree nodes. It doesn't fill the tree. \hypertarget{classADTree_aa66f88d51019999814be20c17663fc29}{
+\index{ADTree@{ADTree}!ADTree@{ADTree}}
+\index{ADTree@{ADTree}!ADTree@{ADTree}}
+\subsubsection[{ADTree}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Shape$>$ {\bf ADTree}$<$ Shape $>$::{\bf ADTree} ({\bf Tree\_\-Header}$<$ Shape $>$ const \& {\em header})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classADTree_aa66f88d51019999814be20c17663fc29}
+A base constructor.
+
+It initializes the tree header and reserve a suitable number of memory locations to store tree nodes. It doesn't fill the tree. \hypertarget{classADTree_aec2a21cd072f346853968b5b9cf9cee5}{
+\index{ADTree@{ADTree}!ADTree@{ADTree}}
+\index{ADTree@{ADTree}!ADTree@{ADTree}}
+\subsubsection[{ADTree}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Shape$>$ {\bf ADTree}$<$ Shape $>$::{\bf ADTree} (Real const $\ast$const  {\em points}, \/  UInt const $\ast$const  {\em triangle}, \/  UInt {\em num\_\-nodes}, \/  UInt {\em num\_\-triangle})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classADTree_aec2a21cd072f346853968b5b9cf9cee5}
+A constructor especially designed for building the tree associated to 2D \hyperlink{structmesh}{mesh} object, the \hyperlink{structmesh}{mesh} is formed by \hyperlink{classTriangle}{Triangle}$<$3/6$>$.
+
+It fills all the locations of the tree. Object's coordinates are stored to perform searching operations. Template parameter must be equal to Triangle$<$3$>$ see mesh\_\-handler to verify what points and triangle must contatin 
+
+\subsection{Member Function Documentation}
+\hypertarget{classADTree_a4210646b297dd9b48c273ff2923a2b59}{
+\index{ADTree@{ADTree}!addtreenode@{addtreenode}}
+\index{addtreenode@{addtreenode}!ADTree@{ADTree}}
+\subsubsection[{addtreenode}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Shape $>$ int {\bf ADTree}$<$ Shape $>$::addtreenode (Id {\em shapeid}, \/  std::vector$<$ Real $>$ const \& {\em coords}, \/  std::vector$<$ int $>$ const \& {\em keys})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classADTree_a4210646b297dd9b48c273ff2923a2b59}
+Adds a node to the tree. It calls the handlers of the exceptions that can be thrown by \hyperlink{classADTree_a813a21f8aa0566f8ec70bcef2c4cc748}{adtrb()}.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em coords}]Coordinates of the point. \item[\mbox{$\leftarrow$} {\em keys}]Additional informations associated to the point.\end{DoxyParams}
+The location of the current node in the tree is returned. \hypertarget{classADTree_a813a21f8aa0566f8ec70bcef2c4cc748}{
+\index{ADTree@{ADTree}!adtrb@{adtrb}}
+\index{adtrb@{adtrb}!ADTree@{ADTree}}
+\subsubsection[{adtrb}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Shape $>$ int {\bf ADTree}$<$ Shape $>$::adtrb (Id {\em shapeid}, \/  std::vector$<$ Real $>$ const \& {\em coords}, \/  std::vector$<$ int $>$ const \& {\em keys})\hspace{0.3cm}{\ttfamily  \mbox{[}inline, protected\mbox{]}}}}
+\label{classADTree_a813a21f8aa0566f8ec70bcef2c4cc748}
+
+
+Adds a point to the tree. It throws:. 
+\begin{DoxyItemize}
+\item a \hyperlink{classTreeDomainError}{TreeDomainError} exception if the point is out of domain; 
+\item a \hyperlink{classTreeAlloc}{TreeAlloc} exception if there is no more space in the tree to add the node; 
+\item a \hyperlink{classLevRuntimeError}{LevRuntimeError} if you exceed the limit set for the tree levels due to the inclusion of the node. 
+\end{DoxyItemize}\hypertarget{classADTree_a70bf34ef5fddca65b241e9e296e26021}{
+\index{ADTree@{ADTree}!delta@{delta}}
+\index{delta@{delta}!ADTree@{ADTree}}
+\subsubsection[{delta}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Shape$>$ double {\bf ADTree}$<$ Shape $>$::delta (int const \& {\em lev}, \/  int const \& {\em dim}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, protected\mbox{]}}}}
+\label{classADTree_a70bf34ef5fddca65b241e9e296e26021}
+Finds delta associated to division at a given level.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em lev}]The given level. \item[\mbox{$\leftarrow$} {\em dim}]The number of dimensions used for the search. \end{DoxyParams}
+\hypertarget{classADTree_a4dd7574cdb137f38611311083294a365}{
+\index{ADTree@{ADTree}!gettreenode@{gettreenode}}
+\index{gettreenode@{gettreenode}!ADTree@{ADTree}}
+\subsubsection[{gettreenode}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Shape$>$ {\bf TreeNode}$<$Shape$>$ {\bf ADTree}$<$ Shape $>$::gettreenode (int const \& {\em loc}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classADTree_a4dd7574cdb137f38611311083294a365}
+Gets out the node stored at a given location.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em loc}]Location of the searched node. \end{DoxyParams}
+\hypertarget{classADTree_a1c1e6da98d9a00a17044d16849dfa2e8}{
+\index{ADTree@{ADTree}!gettri@{gettri}}
+\index{gettri@{gettri}!ADTree@{ADTree}}
+\subsubsection[{gettri}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Shape $>$ void {\bf ADTree}$<$ Shape $>$::gettri (int const \& {\em loc}, \/  std::vector$<$ int $>$ \& {\em info}, \/  std::vector$<$ Real $>$ \& {\em coord}, \/  Id \& {\em id})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classADTree_a1c1e6da98d9a00a17044d16849dfa2e8}
+Gets out the informations stored at a given node.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em loc}]Location of the searched node. \item[\mbox{$\rightarrow$} {\em info}]Additional informations stored in the searched node. \item[\mbox{$\rightarrow$} {\em coord}]Bounding box coordinates of the object stored in the loc-\/th location. \end{DoxyParams}
+\hypertarget{classADTree_a1715508210a8a54094125997eb7e19d1}{
+\index{ADTree@{ADTree}!search@{search}}
+\index{search@{search}!ADTree@{ADTree}}
+\subsubsection[{search}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Shape $>$ bool {\bf ADTree}$<$ Shape $>$::search (std::vector$<$ Real $>$ const \& {\em region}, \/  std::set$<$ int $>$ \& {\em found}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classADTree_a1715508210a8a54094125997eb7e19d1}
+Finds all points or (bounding) boxes that intersect a given box.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em region}]\hyperlink{classBox}{Box} where searching described by the representative point obtained through a corner transformation. \item[\mbox{$\rightarrow$} {\em found}]Indices of the found elements.\end{DoxyParams}
+This function returns true if it has completed successfully, false otherwise. \hypertarget{classADTree_a5f5dcde8e682a04c4e8c8c0e6defc595}{
+\index{ADTree@{ADTree}!searchdim@{searchdim}}
+\index{searchdim@{searchdim}!ADTree@{ADTree}}
+\subsubsection[{searchdim}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Shape$>$ int {\bf ADTree}$<$ Shape $>$::searchdim (int const \& {\em lev}, \/  int const \& {\em dim}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, protected\mbox{]}}}}
+\label{classADTree_a5f5dcde8e682a04c4e8c8c0e6defc595}
+Searches dimension associated to a given level.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em lev}]The given level. \item[\mbox{$\leftarrow$} {\em dim}]The number of dimensions used for the search. \end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classADTree_ab5ed42c46d811ca39c9a6966b974a04b}{
+\index{ADTree@{ADTree}!header\_\-@{header\_\-}}
+\index{header\_\-@{header\_\-}!ADTree@{ADTree}}
+\subsubsection[{header\_\-}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Shape$>$ {\bf Tree\_\-Header}$<$Shape$>$ {\bf ADTree}$<$ Shape $>$::{\bf header\_\-}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classADTree_ab5ed42c46d811ca39c9a6966b974a04b}
+The header.
+
+It contains general information about the tree. 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{adtree_8hpp}{adtree.hpp}\item 
+src/adtree\_\-imp.hpp\end{DoxyCompactItemize}

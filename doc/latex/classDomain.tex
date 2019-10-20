@@ -1,0 +1,119 @@
+\hypertarget{classDomain}{
+\section{Domain$<$ Shape $>$ Class Template Reference}
+\label{classDomain}\index{Domain@{Domain}}
+}
+
+
+It defines geometric limits of a set of points. template parameter Shape is the original geometric figure (ex: triangle, box), it's useful to extract the physical dimension.  
+
+
+{\ttfamily \#include $<$domain.hpp$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classDomain_a605dd094b6b53616070ae43688abe2a4}{Domain} ()
+\item 
+\hyperlink{classDomain_a64da121c550de1bc767ab50bf26280e1}{Domain} (std::vector$<$ std::vector$<$ Real $>$ $>$ const \&coord)
+\item 
+\hypertarget{classDomain_aabf4e0eff40906e1d480c606ba2b7925}{
+Real \hyperlink{classDomain_aabf4e0eff40906e1d480c606ba2b7925}{orig} (int const \&i) const }
+\label{classDomain_aabf4e0eff40906e1d480c606ba2b7925}
+
+\begin{DoxyCompactList}\small\item\em Gets the i-\/th coordinate of the origin of the object's bounding box. \item\end{DoxyCompactList}\item 
+\hypertarget{classDomain_accb70ed1f73f15498c050fc981df2acb}{
+double \hyperlink{classDomain_accb70ed1f73f15498c050fc981df2acb}{scal} (int const \&i) const }
+\label{classDomain_accb70ed1f73f15498c050fc981df2acb}
+
+\begin{DoxyCompactList}\small\item\em Gets the i-\/th scaling factor of the object's bounding box. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classDomain_a9f354e2ea78a206e39fcc9147ce18306}{
+static void \hyperlink{classDomain_a9f354e2ea78a206e39fcc9147ce18306}{settolerance} (Real const \&tol)}
+\label{classDomain_a9f354e2ea78a206e39fcc9147ce18306}
+
+\begin{DoxyCompactList}\small\item\em Sets the tolerance being applied to the object's bounding box. \item\end{DoxyCompactList}\item 
+\hypertarget{classDomain_a5fd4935f50b740a3e797ccc4b9941996}{
+static Real \hyperlink{classDomain_a5fd4935f50b740a3e797ccc4b9941996}{gettolerance} ()}
+\label{classDomain_a5fd4935f50b740a3e797ccc4b9941996}
+
+\begin{DoxyCompactList}\small\item\em Gets the tolerance being applied to the object's bounding box. \item\end{DoxyCompactList}\item 
+\hypertarget{classDomain_a1a7384845ce66d75396430e5b8fb7c48}{
+static void \hyperlink{classDomain_a1a7384845ce66d75396430e5b8fb7c48}{setmindiff} (Real const \&md)}
+\label{classDomain_a1a7384845ce66d75396430e5b8fb7c48}
+
+\begin{DoxyCompactList}\small\item\em Sets the minimum difference between coordinates allowed. \item\end{DoxyCompactList}\item 
+\hypertarget{classDomain_acf5e11e0d0df920d381e4116f531bd16}{
+static Real \hyperlink{classDomain_acf5e11e0d0df920d381e4116f531bd16}{getmindiff} ()}
+\label{classDomain_acf5e11e0d0df920d381e4116f531bd16}
+
+\begin{DoxyCompactList}\small\item\em Gets the minimum difference between coordinates allowed. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classDomain_ab91b5378794983ad5d0b53fe60558d6f}{
+std::vector$<$ Real $>$ \hyperlink{classDomain_ab91b5378794983ad5d0b53fe60558d6f}{origin\_\-}}
+\label{classDomain_ab91b5378794983ad5d0b53fe60558d6f}
+
+\begin{DoxyCompactList}\small\item\em Origin of the object's bounding box = min(coord($\ast$,1:number of points)). \item\end{DoxyCompactList}\item 
+\hypertarget{classDomain_a413aed899edbdf8bca3a7b658ae284e2}{
+std::vector$<$ Real $>$ \hyperlink{classDomain_a413aed899edbdf8bca3a7b658ae284e2}{scalingfactors\_\-}}
+\label{classDomain_a413aed899edbdf8bca3a7b658ae284e2}
+
+\begin{DoxyCompactList}\small\item\em Scaling factors = 1./(max(coord($\ast$,1:number of points)) -\/ min(coord($\ast$,1:number of points))). \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classDomain_ac6e73bc09e5bd38075126e302d80f189}{
+static Real \hyperlink{classDomain_ac6e73bc09e5bd38075126e302d80f189}{tolerance\_\-}}
+\label{classDomain_ac6e73bc09e5bd38075126e302d80f189}
+
+\begin{DoxyCompactList}\small\item\em Tolerance being applied to the object's bounding box. \item\end{DoxyCompactList}\item 
+\hypertarget{classDomain_aade1fb6e3617f19dc15ae5cbe93fa74d}{
+static Real \hyperlink{classDomain_aade1fb6e3617f19dc15ae5cbe93fa74d}{mindiff\_\-}}
+\label{classDomain_aade1fb6e3617f19dc15ae5cbe93fa74d}
+
+\begin{DoxyCompactList}\small\item\em Minimum difference between coordinates allowed. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class S $>$ }\\std::ostream \& \hyperlink{classDomain_ada92a5558513a06e75511c76227bf52c}{operator$<$$<$} (std::ostream \&, \hyperlink{classDomain}{Domain}$<$ S $>$ const \&)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class Shape$>$ class Domain$<$ Shape $>$}
+
+It defines geometric limits of a set of points. template parameter Shape is the original geometric figure (ex: triangle, box), it's useful to extract the physical dimension. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classDomain_a605dd094b6b53616070ae43688abe2a4}{
+\index{Domain@{Domain}!Domain@{Domain}}
+\index{Domain@{Domain}!Domain@{Domain}}
+\subsubsection[{Domain}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Shape$>$ {\bf Domain}$<$ Shape $>$::{\bf Domain} ()}}
+\label{classDomain_a605dd094b6b53616070ae43688abe2a4}
+Default constructor. \hypertarget{classDomain_a64da121c550de1bc767ab50bf26280e1}{
+\index{Domain@{Domain}!Domain@{Domain}}
+\index{Domain@{Domain}!Domain@{Domain}}
+\subsubsection[{Domain}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Shape$>$ {\bf Domain}$<$ Shape $>$::{\bf Domain} (std::vector$<$ std::vector$<$ Real $>$ $>$ const \& {\em coord})}}
+\label{classDomain_a64da121c550de1bc767ab50bf26280e1}
+Another constructor.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em coord}]\hyperlink{classPoint}{Point} coordinates organized in a matrix (coord\mbox{[}i, j\mbox{]} is the i-\/th coordinate of the j-\/th point). \par
+ This matrix is created through a vector of vectors in order to use standard algorithms.\end{DoxyParams}
+It finds geometric limits of a set of points first. Then adds a tolerance. Repeats the limits if the tree dimension is 2 $\ast$ physical space dimension. This is an useful trick. For example, when you have to scale dimensions. 
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classDomain_ada92a5558513a06e75511c76227bf52c}{
+\index{Domain@{Domain}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Domain@{Domain}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Shape$>$ template$<$class S $>$ std::ostream\& operator$<$$<$ (std::ostream \&, \/  {\bf Domain}$<$ S $>$ const \&)\hspace{0.3cm}{\ttfamily  \mbox{[}friend\mbox{]}}}}
+\label{classDomain_ada92a5558513a06e75511c76227bf52c}
+Output operator.
+
+It outputs the bounding box. 
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{domain_8hpp}{domain.hpp}\end{DoxyCompactItemize}

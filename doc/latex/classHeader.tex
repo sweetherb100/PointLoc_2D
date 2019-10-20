@@ -1,0 +1,21 @@
+\hypertarget{classHeader}{
+\section{Header Class Reference}
+\label{classHeader}\index{Header@{Header}}
+}
+
+
+It contains general information about the tree.  
+
+
+{\ttfamily \#include $<$tree\_\-header.hpp$>$}
+
+\subsection{Detailed Description}
+It contains general information about the tree. 
+\begin{DoxyParams}{Parameters}
+\item[{\em T}]The template parameter expresses the original objects for the construction of the tree, it is used to store \hyperlink{classDomain}{Domain$<$T$>$}, T::dp() gives the physical dimension of the object and T::dt() gives the search dimension \par
+ the tree always store Box$<$NDIMP$>$ and the index to find the original object (triangle...), if we want to store point we have to create a box from point (for example repeating the same coordinates for Min\_\-point and Max\_\-point) in the simplest case, or to change the structure adding the poin case everywhere (treenode...)\end{DoxyParams}
+Default copy constructor and default destructor work fine. 
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{tree__header_8hpp}{tree\_\-header.hpp}\end{DoxyCompactItemize}

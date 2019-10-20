@@ -1,0 +1,23 @@
+Package: PointLoc
+Version: 0.9-1
+Date: 2015-06-18
+Title: Point Locator with ADTree algorithm
+Authors@R: c(person("Eardi", "Developer", role = c("aut", "cre"),
+		     email = "eardi.lila@mail.polimi.it"),
+		person("Alessandra", "Cardani", role = "aut",
+		     email = "alessandra1.cardani@mail.polimi.it"),
+	      person("Laura", "Sangalli", role = "aut",
+		     email = "laura.sangalli@polimi.it"),
+	      person("Jim", "Ramsay", role = "aut",
+		     email = " ramsay@psych.mcgill.ca"))
+Author: Eardi Lila [aut, cre],
+  Alessandra Cardani [aut],
+  Laura Sangalli [aut],
+  Jim Ramsay [aut]
+Maintainer: Eardi Lila <eardi.lila@mail.polimi.it>
+Depends: R (>= 3.0.0), rgl
+Suggests: MASS
+Description: The package implements an algorithm for point location based on ADTree structure.
+License: CC BY-NC-SA 3.0
+NeedsCompilation: yes
+Packaged: 2015-09-29 14:06:35 UTC; pacs_student

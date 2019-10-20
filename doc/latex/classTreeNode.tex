@@ -1,0 +1,177 @@
+\hypertarget{classTreeNode}{
+\section{TreeNode$<$ Shape $>$ Class Template Reference}
+\label{classTreeNode}\index{TreeNode@{TreeNode}}
+}
+
+
+Class defining a tree node.  
+
+
+{\ttfamily \#include $<$treenode.hpp$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classTreeNode_a0b76dda42f063815700904c6861055b2}{TreeNode} ()
+\item 
+\hyperlink{classTreeNode_a8fc5141645c0a2131e3d4148da085165}{TreeNode} (Id const id, Shape shape, std::vector$<$ int $>$ const \&keys)
+\item 
+\hypertarget{classTreeNode_a8625cb7bfd1b093017060c0573fd5264}{
+void \hyperlink{classTreeNode_a8625cb7bfd1b093017060c0573fd5264}{setfather} (int const \&ifth)}
+\label{classTreeNode_a8625cb7bfd1b093017060c0573fd5264}
+
+\begin{DoxyCompactList}\small\item\em Sets the father. \item\end{DoxyCompactList}\item 
+void \hyperlink{classTreeNode_a5dc66c89b3e2a3a46600f08f0dad5b80}{setchild} (short int const \&flag, int const \&child)
+\begin{DoxyCompactList}\small\item\em Sets a child. \item\end{DoxyCompactList}\item 
+\hypertarget{classTreeNode_a687e35a6d01acbc98f0f7ba385548122}{
+int \hyperlink{classTreeNode_a687e35a6d01acbc98f0f7ba385548122}{getfather} () const }
+\label{classTreeNode_a687e35a6d01acbc98f0f7ba385548122}
+
+\begin{DoxyCompactList}\small\item\em Returns the father. \item\end{DoxyCompactList}\item 
+int \hyperlink{classTreeNode_ae48bc7d93db5bbbfb8950cf309e17cb3}{getchild} (short int const \&flag) const 
+\begin{DoxyCompactList}\small\item\em Returns a child. \item\end{DoxyCompactList}\item 
+\hypertarget{classTreeNode_ad659a94dd818b13ec165033caccedd22}{
+void \hyperlink{classTreeNode_ad659a94dd818b13ec165033caccedd22}{setcoords} (std::vector$<$ Real $>$ const \&data)}
+\label{classTreeNode_ad659a94dd818b13ec165033caccedd22}
+
+\begin{DoxyCompactList}\small\item\em Sets the coordinates of the bbox stored in the node. \item\end{DoxyCompactList}\item 
+\hypertarget{classTreeNode_a3eb758dc2378eae56e2b365bae71e909}{
+Real \hyperlink{classTreeNode_a3eb758dc2378eae56e2b365bae71e909}{getcoord} (int const \&i) const }
+\label{classTreeNode_a3eb758dc2378eae56e2b365bae71e909}
+
+\begin{DoxyCompactList}\small\item\em Gets the i-\/th coordinate of the bounding box of the object stored in the node. \item\end{DoxyCompactList}\item 
+\hypertarget{classTreeNode_a4bdc3e9bd742427b7e5ca3c6db7c3ff6}{
+void \hyperlink{classTreeNode_a4bdc3e9bd742427b7e5ca3c6db7c3ff6}{setid} (Id id)}
+\label{classTreeNode_a4bdc3e9bd742427b7e5ca3c6db7c3ff6}
+
+\begin{DoxyCompactList}\small\item\em Sets the id stored in the node. \item\end{DoxyCompactList}\item 
+\hypertarget{classTreeNode_ae18786d641caa8c97511a05e47405708}{
+Id \hyperlink{classTreeNode_ae18786d641caa8c97511a05e47405708}{getid} () const }
+\label{classTreeNode_ae18786d641caa8c97511a05e47405708}
+
+\begin{DoxyCompactList}\small\item\em Gets id stored in the node. \item\end{DoxyCompactList}\item 
+void \hyperlink{classTreeNode_a18c8b24477006cf279fcb5b08fc8b65d}{setkeys} (std::vector$<$ int $>$ const \&k)
+\begin{DoxyCompactList}\small\item\em Gets the i-\/th coordinate value of the p-\/th vertex. \item\end{DoxyCompactList}\item 
+\hypertarget{classTreeNode_a06f21fbc6588ad144778d045a4798612}{
+std::vector$<$ int $>$ \hyperlink{classTreeNode_a06f21fbc6588ad144778d045a4798612}{getkeys} () const }
+\label{classTreeNode_a06f21fbc6588ad144778d045a4798612}
+
+\begin{DoxyCompactList}\small\item\em Gets the additional informations stored in the node. \item\end{DoxyCompactList}\item 
+\hypertarget{classTreeNode_a8a3bcea2abeaa8a19bf3bc67446b33c2}{
+\hyperlink{classBox}{Box}$<$ Shape::dp()$>$ \& \hyperlink{classTreeNode_a8a3bcea2abeaa8a19bf3bc67446b33c2}{getbox} ()}
+\label{classTreeNode_a8a3bcea2abeaa8a19bf3bc67446b33c2}
+
+\begin{DoxyCompactList}\small\item\em Returns a reference to box\_\-. \item\end{DoxyCompactList}\item 
+\hypertarget{classTreeNode_a3406b711c48f59b5ebca45363f4c32c8}{
+void \hyperlink{classTreeNode_a3406b711c48f59b5ebca45363f4c32c8}{print} (std::ostream \&out) const }
+\label{classTreeNode_a3406b711c48f59b5ebca45363f4c32c8}
+
+\begin{DoxyCompactList}\small\item\em print information about the treenode \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classTreeNode_a95f8421119daf2730df4905bd97f697d}{father\_\-}
+\item 
+\hypertarget{classTreeNode_a5b6fa7cabe1fd491fe31256fc6429c63}{
+int \hyperlink{classTreeNode_a5b6fa7cabe1fd491fe31256fc6429c63}{children\_\-} \mbox{[}2\mbox{]}}
+\label{classTreeNode_a5b6fa7cabe1fd491fe31256fc6429c63}
+
+\begin{DoxyCompactList}\small\item\em Positions of left and right children. \item\end{DoxyCompactList}\item 
+\hypertarget{classTreeNode_a44681fa0bcf07bec8b5216cb19157784}{
+\hyperlink{classBox}{Box}$<$ Shape::dp()$>$ \hyperlink{classTreeNode_a44681fa0bcf07bec8b5216cb19157784}{box\_\-}}
+\label{classTreeNode_a44681fa0bcf07bec8b5216cb19157784}
+
+\begin{DoxyCompactList}\small\item\em Bounding \hyperlink{classBox}{Box} of the object to be stored. \item\end{DoxyCompactList}\item 
+\hypertarget{classTreeNode_ad01c8a279dacb70598a5fd0f7745eae3}{
+Id \hyperlink{classTreeNode_ad01c8a279dacb70598a5fd0f7745eae3}{id\_\-}}
+\label{classTreeNode_ad01c8a279dacb70598a5fd0f7745eae3}
+
+\begin{DoxyCompactList}\small\item\em The id (in the \hyperlink{structmesh}{mesh}) of the \hyperlink{classTriangle}{Triangle} that create the BBox. \item\end{DoxyCompactList}\item 
+std::vector$<$ int $>$ \hyperlink{classTreeNode_af184af7ec1a760f9928a9cc7a76a8395}{keys\_\-}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class Shape$>$ class TreeNode$<$ Shape $>$}
+
+Class defining a tree node. 
+\begin{DoxyParams}{Parameters}
+\item[{\em Shape,:}]template parameter, is the original shape, in the treenode are stored the bbox of the original object and an index that identify that object \end{DoxyParams}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classTreeNode_a0b76dda42f063815700904c6861055b2}{
+\index{TreeNode@{TreeNode}!TreeNode@{TreeNode}}
+\index{TreeNode@{TreeNode}!TreeNode@{TreeNode}}
+\subsubsection[{TreeNode}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Shape $>$ {\bf TreeNode}$<$ Shape $>$::{\bf TreeNode} ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classTreeNode_a0b76dda42f063815700904c6861055b2}
+Default constructor.
+
+It's fundamental in creating a vector of \hyperlink{classTreeNode}{TreeNode} objects. \hypertarget{classTreeNode_a8fc5141645c0a2131e3d4148da085165}{
+\index{TreeNode@{TreeNode}!TreeNode@{TreeNode}}
+\index{TreeNode@{TreeNode}!TreeNode@{TreeNode}}
+\subsubsection[{TreeNode}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Shape $>$ {\bf TreeNode}$<$ Shape $>$::{\bf TreeNode} (Id const  {\em id}, \/  Shape {\em shape}, \/  std::vector$<$ int $>$ const \& {\em keys})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classTreeNode_a8fc5141645c0a2131e3d4148da085165}
+Another constructor.
+
+Shape is the shape from the id, it's need the constructor for box, from shape! it works with \hyperlink{classTriangle}{Triangle}, or \hyperlink{classBox}{Box}, it can be extended 
+
+\subsection{Member Function Documentation}
+\hypertarget{classTreeNode_ae48bc7d93db5bbbfb8950cf309e17cb3}{
+\index{TreeNode@{TreeNode}!getchild@{getchild}}
+\index{getchild@{getchild}!TreeNode@{TreeNode}}
+\subsubsection[{getchild}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Shape $>$ int {\bf TreeNode}$<$ Shape $>$::getchild (short int const \& {\em flag}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classTreeNode_ae48bc7d93db5bbbfb8950cf309e17cb3}
+
+
+Returns a child. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em flag}]Index of the child to be returned. \par
+ If: 
+\begin{DoxyItemize}
+\item flag = 0, return the left child 
+\item flag = 1, return the right child 
+\end{DoxyItemize}\end{DoxyParams}
+\hypertarget{classTreeNode_a5dc66c89b3e2a3a46600f08f0dad5b80}{
+\index{TreeNode@{TreeNode}!setchild@{setchild}}
+\index{setchild@{setchild}!TreeNode@{TreeNode}}
+\subsubsection[{setchild}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Shape $>$ void {\bf TreeNode}$<$ Shape $>$::setchild (short int const \& {\em flag}, \/  int const \& {\em child})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classTreeNode_a5dc66c89b3e2a3a46600f08f0dad5b80}
+
+
+Sets a child. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em flag}]Index of the child to be set. \par
+ If: 
+\begin{DoxyItemize}
+\item flag = 0, set the left child 
+\item flag = 1, set the right child 
+\end{DoxyItemize}\item[\mbox{$\leftarrow$} {\em child}]The child node. \end{DoxyParams}
+\hypertarget{classTreeNode_a18c8b24477006cf279fcb5b08fc8b65d}{
+\index{TreeNode@{TreeNode}!setkeys@{setkeys}}
+\index{setkeys@{setkeys}!TreeNode@{TreeNode}}
+\subsubsection[{setkeys}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Shape $>$ void {\bf TreeNode}$<$ Shape $>$::setkeys (std::vector$<$ int $>$ const \& {\em k})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classTreeNode_a18c8b24477006cf279fcb5b08fc8b65d}
+
+
+Gets the i-\/th coordinate value of the p-\/th vertex. Sets the additional informations to be stored in the node. 
+
+\subsection{Member Data Documentation}
+\hypertarget{classTreeNode_a95f8421119daf2730df4905bd97f697d}{
+\index{TreeNode@{TreeNode}!father\_\-@{father\_\-}}
+\index{father\_\-@{father\_\-}!TreeNode@{TreeNode}}
+\subsubsection[{father\_\-}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Shape $>$ int {\bf TreeNode}$<$ Shape $>$::{\bf father\_\-}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classTreeNode_a95f8421119daf2730df4905bd97f697d}
+Position of the father node.
+
+It's used by the algorithm for deleting a tree node. \hypertarget{classTreeNode_af184af7ec1a760f9928a9cc7a76a8395}{
+\index{TreeNode@{TreeNode}!keys\_\-@{keys\_\-}}
+\index{keys\_\-@{keys\_\-}!TreeNode@{TreeNode}}
+\subsubsection[{keys\_\-}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Shape $>$ std::vector$<$int$>$ {\bf TreeNode}$<$ Shape $>$::{\bf keys\_\-}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classTreeNode_af184af7ec1a760f9928a9cc7a76a8395}
+Additional informations to be stored in the node.
+
+Maybe a more sophisticated object than a std::vector$<$int$>$ can be more useful. 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{treenode_8hpp}{treenode.hpp}\item 
+src/treenode\_\-imp.hpp\end{DoxyCompactItemize}

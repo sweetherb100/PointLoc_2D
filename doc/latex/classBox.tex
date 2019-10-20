@@ -1,0 +1,122 @@
+\hypertarget{classBox}{
+\section{Box$<$ NDIMP $>$ Class Template Reference}
+\label{classBox}\index{Box@{Box}}
+}
+
+
+Policy used when boxes have to be stored in the tree.  
+
+
+{\ttfamily \#include $<$bounding\_\-box.hpp$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classBox_a7548150a557424f99283efb7c4210c9c}{Box} ()
+\item 
+\hyperlink{classBox_abebee9f400cfe9c76f5a954a989fae68}{Box} (std::vector$<$ Real $>$ const \&coord)
+\item 
+{\footnotesize template$<$UInt NNODES$>$ }\\\hyperlink{classBox_a60c887b1a652f979d556369c1fff3405}{Box} (\hyperlink{classTriangle}{Triangle}$<$ NNODES $>$ const \&triangle)
+\item 
+\hypertarget{classBox_a200d65939f4e06a24fe2a402676803e9}{
+Real \hyperlink{classBox_a200d65939f4e06a24fe2a402676803e9}{operator\mbox{[}$\,$\mbox{]}} (int const \&i)}
+\label{classBox_a200d65939f4e06a24fe2a402676803e9}
+
+\begin{DoxyCompactList}\small\item\em Returns the i-\/th coordinate value. \item\end{DoxyCompactList}\item 
+\hypertarget{classBox_a3f61ada09d0cf4bdc638f283a75c1232}{
+Real {\bfseries operator\mbox{[}$\,$\mbox{]}} (int const \&i) const }
+\label{classBox_a3f61ada09d0cf4bdc638f283a75c1232}
+
+\item 
+void \hyperlink{classBox_ab4053092717a3fabb8bdc88f28e20a9f}{set} (std::vector$<$ Real $>$ const \&data)
+\item 
+void \hyperlink{classBox_a625059fd5ee270a5392632825601154e}{print} (std::ostream \&out) const 
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classBox_ac6c8af90475ae92c884f1ad4c569749f}{
+static constexpr int \hyperlink{classBox_ac6c8af90475ae92c884f1ad4c569749f}{dp} ()}
+\label{classBox_ac6c8af90475ae92c884f1ad4c569749f}
+
+\begin{DoxyCompactList}\small\item\em Returns the number of physical space dimension. \item\end{DoxyCompactList}\item 
+\hypertarget{classBox_a0c260b284827a9055b885930200e5460}{
+static constexpr int \hyperlink{classBox_a0c260b284827a9055b885930200e5460}{dt} ()}
+\label{classBox_a0c260b284827a9055b885930200e5460}
+
+\begin{DoxyCompactList}\small\item\em Returns the number of dimensions used for the search (2$\ast$NDIMP). \item\end{DoxyCompactList}\item 
+\hypertarget{classBox_ac249e82f2f46555e5f6e2a98d7f9541c}{
+static constexpr int \hyperlink{classBox_ac249e82f2f46555e5f6e2a98d7f9541c}{coordsize} ()}
+\label{classBox_ac249e82f2f46555e5f6e2a98d7f9541c}
+
+\begin{DoxyCompactList}\small\item\em Returns the size of coordinate array. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std::vector$<$ Real $>$ \hyperlink{classBox_a07648c6766718416a0a68dcd46258933}{x\_\-}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$int NDIMP$>$ class Box$<$ NDIMP $>$}
+
+Policy used when boxes have to be stored in the tree. parameter NDIMP is the physical dimension: 2 -\/$>$ 2D, 3 -\/$>$ 3D 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classBox_a7548150a557424f99283efb7c4210c9c}{
+\index{Box@{Box}!Box@{Box}}
+\index{Box@{Box}!Box@{Box}}
+\subsubsection[{Box}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int NDIMP$>$ {\bf Box}$<$ NDIMP $>$::{\bf Box} ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classBox_a7548150a557424f99283efb7c4210c9c}
+Default constructor.
+
+It's fundamental in creating a vector of \hyperlink{classBox}{Box} objects. Sets coordinate values to zero. \hypertarget{classBox_abebee9f400cfe9c76f5a954a989fae68}{
+\index{Box@{Box}!Box@{Box}}
+\index{Box@{Box}!Box@{Box}}
+\subsubsection[{Box}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int NDIMP$>$ {\bf Box}$<$ NDIMP $>$::{\bf Box} (std::vector$<$ Real $>$ const \& {\em coord})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classBox_abebee9f400cfe9c76f5a954a989fae68}
+Another constructor.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em coord}]Pointer to an array containing input coordinates. Make sure that its size is equal to the size of protected member x\_\-. \end{DoxyParams}
+\hypertarget{classBox_a60c887b1a652f979d556369c1fff3405}{
+\index{Box@{Box}!Box@{Box}}
+\index{Box@{Box}!Box@{Box}}
+\subsubsection[{Box}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int NDIMP$>$ template$<$UInt NNODES$>$ {\bf Box}$<$ NDIMP $>$::{\bf Box} ({\bf Triangle}$<$ NNODES $>$ const \& {\em triangle})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classBox_a60c887b1a652f979d556369c1fff3405}
+Another constructor.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em a}]2D \hyperlink{classTriangle}{Triangle} Make sure that NDIMP = 2.\end{DoxyParams}
+it's possible create new constructor for the new element that we may need (for example 3D \hyperlink{classTriangle}{Triangle} or Tetrahedron) 
+
+\subsection{Member Function Documentation}
+\hypertarget{classBox_a625059fd5ee270a5392632825601154e}{
+\index{Box@{Box}!print@{print}}
+\index{print@{print}!Box@{Box}}
+\subsubsection[{print}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int NDIMP$>$ void {\bf Box}$<$ NDIMP $>$::print (std::ostream \& {\em out}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classBox_a625059fd5ee270a5392632825601154e}
+print the two bbox point specialized for NDIMP = 2,3 \hypertarget{classBox_ab4053092717a3fabb8bdc88f28e20a9f}{
+\index{Box@{Box}!set@{set}}
+\index{set@{set}!Box@{Box}}
+\subsubsection[{set}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int NDIMP$>$ void {\bf Box}$<$ NDIMP $>$::set (std::vector$<$ Real $>$ const \& {\em data})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classBox_ab4053092717a3fabb8bdc88f28e20a9f}
+Sets coordinate values.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em data}]Pointer to an array containing new coordinates. Make sure that its size is equal to the size of protected member x. \end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classBox_a07648c6766718416a0a68dcd46258933}{
+\index{Box@{Box}!x\_\-@{x\_\-}}
+\index{x\_\-@{x\_\-}!Box@{Box}}
+\subsubsection[{x\_\-}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int NDIMP$>$ std::vector$<$Real$>$ {\bf Box}$<$ NDIMP $>$::{\bf x\_\-}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classBox_a07648c6766718416a0a68dcd46258933}
+A vector of rectangle corner coordinates. First NDIMP values are the coordinates of the rectangle corner with minimum coordinates, followed by the coordinates of the opposite corner. 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+src/bounding\_\-box.hpp\item 
+src/bounding\_\-box\_\-imp.hpp\end{DoxyCompactItemize}

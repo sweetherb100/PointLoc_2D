@@ -1,0 +1,70 @@
+\hypertarget{classEdge}{
+\section{Edge Class Reference}
+\label{classEdge}\index{Edge@{Edge}}
+}
+
+
+This class implements an \hyperlink{classEdge}{Edge}, as an objects composed by two 2D points.  
+
+
+{\ttfamily \#include $<$mesh\_\-objects.hpp$>$}Inheritance diagram for Edge::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classEdge}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classEdge_ab4cc26a850f41458630352cdba59d6b0}{
+{\bfseries Edge} (Id id, BcId bcId, const \hyperlink{classPoint}{Point} \&start, const \hyperlink{classPoint}{Point} \&end)}
+\label{classEdge_ab4cc26a850f41458630352cdba59d6b0}
+
+\item 
+\hypertarget{classEdge_af8d0a024ae2b1d02144c744140fe0285}{
+void {\bfseries print} (std::ostream \&out) const }
+\label{classEdge_af8d0a024ae2b1d02144c744140fe0285}
+
+\item 
+\hypertarget{classEdge_a2e750308a1b56fb5b17ca13136730ae7}{
+\hyperlink{classPoint}{Point} {\bfseries getFirst} () const }
+\label{classEdge_a2e750308a1b56fb5b17ca13136730ae7}
+
+\item 
+\hypertarget{classEdge_ae06457bc71fac7a58b35db0ea62a85ca}{
+\hyperlink{classPoint}{Point} {\bfseries getEnd} () const }
+\label{classEdge_ae06457bc71fac7a58b35db0ea62a85ca}
+
+\item 
+\hypertarget{classEdge_a1c6c3568ea4329c91674d6466311db9d}{
+\hyperlink{classPoint}{Point} {\bfseries operator\mbox{[}$\,$\mbox{]}} (UInt i) const }
+\label{classEdge_a1c6c3568ea4329c91674d6466311db9d}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classEdge_a77f401000ef6b1c32dd07f66e12c28f8}{
+static const UInt {\bfseries NNODES} = 2}
+\label{classEdge_a77f401000ef6b1c32dd07f66e12c28f8}
+
+\item 
+\hypertarget{classEdge_a11c1f025b24fb0b0b83da5ecd990eea0}{
+static const UInt {\bfseries numSides} = 1}
+\label{classEdge_a11c1f025b24fb0b0b83da5ecd990eea0}
+
+\item 
+\hypertarget{classEdge_af57901544ca809e56b0ef5517565f01a}{
+static const UInt {\bfseries myDim} = 1}
+\label{classEdge_af57901544ca809e56b0ef5517565f01a}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class implements an \hyperlink{classEdge}{Edge}, as an objects composed by two 2D points. 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+src/mesh\_\-objects.hpp\item 
+src/mesh\_\-objects.cpp\end{DoxyCompactItemize}

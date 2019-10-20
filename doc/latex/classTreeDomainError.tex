@@ -1,0 +1,73 @@
+\hypertarget{classTreeDomainError}{
+\section{TreeDomainError$<$ Shape $>$ Class Template Reference}
+\label{classTreeDomainError}\index{TreeDomainError@{TreeDomainError}}
+}
+
+
+{\ttfamily \#include $<$exception\_\-handling.hpp$>$}Inheritance diagram for TreeDomainError$<$ Shape $>$::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3cm]{classTreeDomainError}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classTreeDomainError_a36c6d072485354991aa96f295f545f2c}{TreeDomainError} (int const \&np1, int const \&size, std::vector$<$ Real $>$ const coord)
+\item 
+\hypertarget{classTreeDomainError_a5f366c57baa089fed8fd70dd1039c9a8}{
+int \hyperlink{classTreeDomainError_a5f366c57baa089fed8fd70dd1039c9a8}{getnelep1} () const }
+\label{classTreeDomainError_a5f366c57baa089fed8fd70dd1039c9a8}
+
+\begin{DoxyCompactList}\small\item\em Returns number of logical locations currently used in the tree plus 1. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classTreeDomainError_ab6f1f38f2cff2ee9c561e49ec678069d}{
+int \hyperlink{classTreeDomainError_ab6f1f38f2cff2ee9c561e49ec678069d}{nelep1}}
+\label{classTreeDomainError_ab6f1f38f2cff2ee9c561e49ec678069d}
+
+\begin{DoxyCompactList}\small\item\em Number of logical locations currently used in the tree plus 1. \item\end{DoxyCompactList}\item 
+\hypertarget{classTreeDomainError_a4549e1a6439fcfc9a581505e21f3fcec}{
+int \hyperlink{classTreeDomainError_a4549e1a6439fcfc9a581505e21f3fcec}{csize}}
+\label{classTreeDomainError_a4549e1a6439fcfc9a581505e21f3fcec}
+
+\begin{DoxyCompactList}\small\item\em Size of the array storing the coordinates of the object which is out of domain. \item\end{DoxyCompactList}\item 
+\hypertarget{classTreeDomainError_a181c509a5e1dbcf4c3b2f0c1918a8345}{
+std::vector$<$ Real $>$ \hyperlink{classTreeDomainError_a181c509a5e1dbcf4c3b2f0c1918a8345}{outobj}}
+\label{classTreeDomainError_a181c509a5e1dbcf4c3b2f0c1918a8345}
+
+\begin{DoxyCompactList}\small\item\em Coordinates of the object which is out of domain. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class T $>$ }\\std::ostream \& \hyperlink{classTreeDomainError_a25d8eeca1719586bbbaeac6a01aa178b}{operator$<$$<$} (std::ostream \&ostr, \hyperlink{classTreeDomainError}{TreeDomainError}$<$ T $>$ const \&de)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class Shape$>$ class TreeDomainError$<$ Shape $>$}
+
+This class is used to report the exception condition in which an object is out of domain. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classTreeDomainError_a36c6d072485354991aa96f295f545f2c}{
+\index{TreeDomainError@{TreeDomainError}!TreeDomainError@{TreeDomainError}}
+\index{TreeDomainError@{TreeDomainError}!TreeDomainError@{TreeDomainError}}
+\subsubsection[{TreeDomainError}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Shape $>$ {\bf TreeDomainError}$<$ Shape $>$::{\bf TreeDomainError} (int const \& {\em np1}, \/  int const \& {\em size}, \/  std::vector$<$ Real $>$ const  {\em coord})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classTreeDomainError_a36c6d072485354991aa96f295f545f2c}
+A constructor. 
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classTreeDomainError_a25d8eeca1719586bbbaeac6a01aa178b}{
+\index{TreeDomainError@{TreeDomainError}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!TreeDomainError@{TreeDomainError}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Shape$>$ template$<$class T $>$ std::ostream\& operator$<$$<$ (std::ostream \& {\em ostr}, \/  {\bf TreeDomainError}$<$ T $>$ const \& {\em de})\hspace{0.3cm}{\ttfamily  \mbox{[}friend\mbox{]}}}}
+\label{classTreeDomainError_a25d8eeca1719586bbbaeac6a01aa178b}
+Output operator.
+
+It outputs coordinates of the object which is out of domain. 
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{exception__handling_8hpp}{exception\_\-handling.hpp}\end{DoxyCompactItemize}

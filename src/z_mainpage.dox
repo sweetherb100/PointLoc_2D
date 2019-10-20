@@ -1,0 +1,10 @@
+/**
+\mainpage Brief Introduction to the package
+
+Point Locator algorithm.
+
+
+This is an R library, implementated in C++, for Point Location.
+We use different algorithm to compute poit location on 2D triangular mesh.
+
+*/

@@ -1,0 +1,107 @@
+\hypertarget{classPoint}{
+\section{Point Class Reference}
+\label{classPoint}\index{Point@{Point}}
+}
+
+
+This class implements a 2D point.  
+
+
+{\ttfamily \#include $<$mesh\_\-objects.hpp$>$}Inheritance diagram for Point::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classPoint}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classPoint_a034584b85d239bdd5bd38ab80ab9aee6}{Point} (Real x, Real y)
+\item 
+\hyperlink{classPoint_ae0b5d58f061678fef344fffa0160ddc3}{Point} (std::vector$<$ Real $>$ const \&coord)
+\item 
+\hyperlink{classPoint_ac78e6a41f2d39366526d0bc0f1203efd}{Point} (Id id, BcId bcId, Real x, Real y)
+\item 
+\hypertarget{classPoint_a9717f7833e597160d616b0b643225c37}{
+void \hyperlink{classPoint_a9717f7833e597160d616b0b643225c37}{print} (std::ostream \&out) const }
+\label{classPoint_a9717f7833e597160d616b0b643225c37}
+
+\begin{DoxyCompactList}\small\item\em print general information about the point \item\end{DoxyCompactList}\item 
+\hypertarget{classPoint_a781ea96ab6bb588f2583bbaa5aefea6b}{
+Real \hyperlink{classPoint_a781ea96ab6bb588f2583bbaa5aefea6b}{operator\mbox{[}$\,$\mbox{]}} (UInt i) const }
+\label{classPoint_a781ea96ab6bb588f2583bbaa5aefea6b}
+
+\begin{DoxyCompactList}\small\item\em return the i-\/th coordinate value \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classPoint_aff2972e71baa58292b080fb164de8ca6}{
+static constexpr int \hyperlink{classPoint_aff2972e71baa58292b080fb164de8ca6}{dp} ()}
+\label{classPoint_aff2972e71baa58292b080fb164de8ca6}
+
+\begin{DoxyCompactList}\small\item\em Returns the number of physical space dimension. \item\end{DoxyCompactList}\item 
+\hypertarget{classPoint_a3e43ae96cdd00fe2e6ba73e42031ad55}{
+static constexpr int \hyperlink{classPoint_a3e43ae96cdd00fe2e6ba73e42031ad55}{dt} ()}
+\label{classPoint_a3e43ae96cdd00fe2e6ba73e42031ad55}
+
+\begin{DoxyCompactList}\small\item\em Returns the number of dimensions used for the search (equal to physical space dimension). \item\end{DoxyCompactList}\item 
+\hypertarget{classPoint_a2798999b4a017d89616eb4f5a95ac12b}{
+static constexpr int \hyperlink{classPoint_a2798999b4a017d89616eb4f5a95ac12b}{coordsize} ()}
+\label{classPoint_a2798999b4a017d89616eb4f5a95ac12b}
+
+\begin{DoxyCompactList}\small\item\em Returns the size of coordinate array. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const UInt \hyperlink{classPoint_ac784604377be8075032dcc79d14d7e8b}{ndim} = 2
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class implements a 2D point. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classPoint_a034584b85d239bdd5bd38ab80ab9aee6}{
+\index{Point@{Point}!Point@{Point}}
+\index{Point@{Point}!Point@{Point}}
+\subsubsection[{Point}]{\setlength{\rightskip}{0pt plus 5cm}Point::Point (Real {\em x}, \/  Real {\em y})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classPoint_a034584b85d239bdd5bd38ab80ab9aee6}
+Another constructor.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em two}]real, the first is the x-\/coordinate and the second the y-\/coordinate the identifier is set to NVAL \end{DoxyParams}
+\hypertarget{classPoint_ae0b5d58f061678fef344fffa0160ddc3}{
+\index{Point@{Point}!Point@{Point}}
+\index{Point@{Point}!Point@{Point}}
+\subsubsection[{Point}]{\setlength{\rightskip}{0pt plus 5cm}Point::Point (std::vector$<$ Real $>$ const \& {\em coord})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classPoint_ae0b5d58f061678fef344fffa0160ddc3}
+Another constructor.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em std::vector$<$Real$>$}]it is necessary for the communication with \hyperlink{classADTree}{ADTree} structure the identifier is set to NVAL \end{DoxyParams}
+\hypertarget{classPoint_ac78e6a41f2d39366526d0bc0f1203efd}{
+\index{Point@{Point}!Point@{Point}}
+\index{Point@{Point}!Point@{Point}}
+\subsubsection[{Point}]{\setlength{\rightskip}{0pt plus 5cm}Point::Point (Id {\em id}, \/  BcId {\em bcId}, \/  Real {\em x}, \/  Real {\em y})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classPoint_ac78e6a41f2d39366526d0bc0f1203efd}
+Another constructor.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em four}]real, the first two are the value for identifier, the other are the x-\/coordinate and the y-\/coordinate \end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classPoint_ac784604377be8075032dcc79d14d7e8b}{
+\index{Point@{Point}!ndim@{ndim}}
+\index{ndim@{ndim}!Point@{Point}}
+\subsubsection[{ndim}]{\setlength{\rightskip}{0pt plus 5cm}const UInt {\bf Point::ndim} = 2\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classPoint_ac784604377be8075032dcc79d14d7e8b}
+physical dimension of the point 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+src/mesh\_\-objects.hpp\item 
+src/mesh\_\-objects.cpp\end{DoxyCompactItemize}

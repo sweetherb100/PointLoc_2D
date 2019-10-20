@@ -1,0 +1,63 @@
+\hypertarget{classLocLengthError}{
+\section{LocLengthError$<$ Shape $>$ Class Template Reference}
+\label{classLocLengthError}\index{LocLengthError@{LocLengthError}}
+}
+
+
+This class is used to report an attempt to build a tree with more memory locations than a fixed limit.  
+
+
+{\ttfamily \#include $<$exception\_\-handling.hpp$>$}Inheritance diagram for LocLengthError$<$ Shape $>$::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4cm]{classLocLengthError}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classLocLengthError_aa99b1f424fc5d9a081269f99ea239230}{LocLengthError} (int const \&mtree, int const \&ntree)
+\item 
+\hypertarget{classLocLengthError_add45b8c75237409ce118719cc668473b}{
+int const \hyperlink{classLocLengthError_add45b8c75237409ce118719cc668473b}{getmaxtreeloc} () const }
+\label{classLocLengthError_add45b8c75237409ce118719cc668473b}
+
+\begin{DoxyCompactList}\small\item\em Gets the maximum number of tree memory locations available. \item\end{DoxyCompactList}\item 
+\hypertarget{classLocLengthError_a35bc168775794537fe7ffae95c2af138}{
+int const \hyperlink{classLocLengthError_a35bc168775794537fe7ffae95c2af138}{gettreeloc} () const }
+\label{classLocLengthError_a35bc168775794537fe7ffae95c2af138}
+
+\begin{DoxyCompactList}\small\item\em Gets the number of tree memory locations needed. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classLocLengthError_aae1abb4777cbb5be258a7349ff1cc30f}{
+int \hyperlink{classLocLengthError_aae1abb4777cbb5be258a7349ff1cc30f}{max\_\-tree\_\-loc}}
+\label{classLocLengthError_aae1abb4777cbb5be258a7349ff1cc30f}
+
+\begin{DoxyCompactList}\small\item\em Maximum tree memory locations available. \item\end{DoxyCompactList}\item 
+\hypertarget{classLocLengthError_afe2db13de26663e929ecf1ed2839adef}{
+int \hyperlink{classLocLengthError_afe2db13de26663e929ecf1ed2839adef}{tree\_\-loc}}
+\label{classLocLengthError_afe2db13de26663e929ecf1ed2839adef}
+
+\begin{DoxyCompactList}\small\item\em Tree memory locations needed. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class Shape$>$ class LocLengthError$<$ Shape $>$}
+
+This class is used to report an attempt to build a tree with more memory locations than a fixed limit. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classLocLengthError_aa99b1f424fc5d9a081269f99ea239230}{
+\index{LocLengthError@{LocLengthError}!LocLengthError@{LocLengthError}}
+\index{LocLengthError@{LocLengthError}!LocLengthError@{LocLengthError}}
+\subsubsection[{LocLengthError}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Shape$>$ {\bf LocLengthError}$<$ Shape $>$::{\bf LocLengthError} (int const \& {\em mtree}, \/  int const \& {\em ntree})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classLocLengthError_aa99b1f424fc5d9a081269f99ea239230}
+A constructor.
+
+Initialize the number of the required tree locations. 
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{exception__handling_8hpp}{exception\_\-handling.hpp}\end{DoxyCompactItemize}

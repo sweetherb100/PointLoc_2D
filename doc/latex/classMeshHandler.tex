@@ -1,0 +1,233 @@
+\hypertarget{classMeshHandler}{
+\section{MeshHandler$<$ ORDER $>$ Class Template Reference}
+\label{classMeshHandler}\index{MeshHandler@{MeshHandler}}
+}
+
+
+This class gives an object-\/oriented reading interface to the output of the library \hyperlink{classTriangle}{Triangle} (Jonathan Richard Shewchuk).  
+
+
+{\ttfamily \#include $<$mesh.hpp$>$}\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classMeshHandler_ad644d0751db0969df9a4255750056f8f}{
+typedef int {\bfseries UInt}}
+\label{classMeshHandler_ad644d0751db0969df9a4255750056f8f}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMeshHandler_a983560a8f515c91a25a13d7d14b751c2}{MeshHandler} (Real $\ast$points, UInt $\ast$edges, UInt $\ast$triangles, UInt $\ast$neighbors, UInt num\_\-nodes, UInt num\_\-edges, UInt num\_\-triangles)
+\begin{DoxyCompactList}\small\item\em A constructor. \item\end{DoxyCompactList}\item 
+\hyperlink{classMeshHandler_a07339e31fd7550c9a9f8a99deba34074}{MeshHandler} (Real $\ast$points, UInt $\ast$edges, UInt $\ast$triangles, UInt $\ast$neighbors, UInt num\_\-nodes, UInt num\_\-edges, UInt num\_\-triangles, bool flag)
+\begin{DoxyCompactList}\small\item\em Another constructor. \item\end{DoxyCompactList}\item 
+UInt \hyperlink{classMeshHandler_aad0e450b97d6cf690d31b850524e7cda}{num\_\-nodes} () const 
+\begin{DoxyCompactList}\small\item\em A normal member returning an unsigned integer value. \item\end{DoxyCompactList}\item 
+UInt \hyperlink{classMeshHandler_a8c6a559cb5b5024d591c1edaa560a111}{num\_\-triangles} () const 
+\begin{DoxyCompactList}\small\item\em A normal member returning an unsigned integer value. \item\end{DoxyCompactList}\item 
+UInt \hyperlink{classMeshHandler_a545391eb9397b594ecbe0adae69a6887}{num\_\-edges} () const 
+\begin{DoxyCompactList}\small\item\em A normal member returning an unsigned integer value. \item\end{DoxyCompactList}\item 
+\hyperlink{classPoint}{Point} \hyperlink{classMeshHandler_a5657ecd9b4774575759ba816156e1586}{getPoint} (Id id)
+\begin{DoxyCompactList}\small\item\em A normal member returning a \hyperlink{classPoint}{Point}. \item\end{DoxyCompactList}\item 
+\hyperlink{classEdge}{Edge} \hyperlink{classMeshHandler_a346871cf4c2aa8082e81a76dd7ef5373}{getEdge} (Id id)
+\begin{DoxyCompactList}\small\item\em A normal member returning an \hyperlink{classEdge}{Edge}. \item\end{DoxyCompactList}\item 
+\hyperlink{classTriangle}{Triangle}$<$ ORDER $\ast$3 $>$ \hyperlink{classMeshHandler_affac7f7128b883d6a0a6cdd19c1bd9bd}{getTriangle} (Id id) const 
+\begin{DoxyCompactList}\small\item\em A normal member returning a \hyperlink{classTriangle}{Triangle}. \item\end{DoxyCompactList}\item 
+\hyperlink{classTriangle}{Triangle}$<$ ORDER $\ast$3 $>$ \hyperlink{classMeshHandler_a67e2b3d75d30094f0a5a8d72213bdca3}{getNeighbors} (Id id\_\-triangle, UInt number) const 
+\begin{DoxyCompactList}\small\item\em A normal member returning the Neighbors of a triangle. \item\end{DoxyCompactList}\item 
+const \hyperlink{classADTree}{ADTree}$<$ \hyperlink{classTriangle}{Triangle}$<$ ORDER $\ast$3 $>$ $>$ \& \hyperlink{classMeshHandler_abdd94b51080aa42f94b22bc1b472c072}{getTree} () const 
+\begin{DoxyCompactList}\small\item\em A normal member returning the \hyperlink{classADTree}{ADTree}. \item\end{DoxyCompactList}\item 
+\hypertarget{classMeshHandler_acca90db9207de18c3352398ba8d47508}{
+void {\bfseries printPoints} (std::ostream \&out)}
+\label{classMeshHandler_acca90db9207de18c3352398ba8d47508}
+
+\item 
+\hypertarget{classMeshHandler_a935859b0c11df03282b36c12ccdba06a}{
+void {\bfseries printEdges} (std::ostream \&out)}
+\label{classMeshHandler_a935859b0c11df03282b36c12ccdba06a}
+
+\item 
+\hypertarget{classMeshHandler_ac5ae61012c5cc086466dbe4fde83a462}{
+void {\bfseries printTriangles} (std::ostream \&out)}
+\label{classMeshHandler_ac5ae61012c5cc086466dbe4fde83a462}
+
+\item 
+\hypertarget{classMeshHandler_a71dafca65a78ef928eddafec0046013c}{
+void {\bfseries printNeighbors} (std::ostream \&out)}
+\label{classMeshHandler_a71dafca65a78ef928eddafec0046013c}
+
+\item 
+\hypertarget{classMeshHandler_a236dcbdcaed7cde080bc1ef9da80dc9b}{
+void {\bfseries printTree} (std::ostream \&out)}
+\label{classMeshHandler_a236dcbdcaed7cde080bc1ef9da80dc9b}
+
+\item 
+\hyperlink{classTriangle}{Triangle}$<$ ORDER $\ast$3 $>$ \hyperlink{classMeshHandler_ac101637668e7960b5ed960bb0d55a1af}{findLocationNaive} (\hyperlink{classPoint}{Point} point) const 
+\begin{DoxyCompactList}\small\item\em A normal member returning the triangle on which a point is located. \item\end{DoxyCompactList}\item 
+\hyperlink{classTriangle}{Triangle}$<$ ORDER $\ast$3 $>$ \hyperlink{classMeshHandler_a0d4dfa615986d926bfff90432aee863b}{findLocationWalking} (const \hyperlink{classPoint}{Point} \&point, const vector$<$ \hyperlink{classTriangle}{Triangle}$<$ ORDER $\ast$3 $>$ $>$ \&starting\_\-triangles) const 
+\begin{DoxyCompactList}\small\item\em A normal member returning the triangle on which a point is located. \item\end{DoxyCompactList}\item 
+\hyperlink{classTriangle}{Triangle}$<$ ORDER $\ast$3 $>$ \hyperlink{classMeshHandler_a2ebf0f4f46e7e74089ce40196d3ed596}{findLocationTree} (const \hyperlink{classPoint}{Point} \&point) const 
+\begin{DoxyCompactList}\small\item\em A normal member returning the triangle on which a point is located. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$UInt ORDER$>$ class MeshHandler$<$ ORDER $>$}
+
+This class gives an object-\/oriented reading interface to the output of the library \hyperlink{classTriangle}{Triangle} (Jonathan Richard Shewchuk). The template parameters specify the order of its elemnts. The aim of this class is to do not introduce any initialization overhead, beacuse it will be called many time during the execution of a R script 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classMeshHandler_a983560a8f515c91a25a13d7d14b751c2}{
+\index{MeshHandler@{MeshHandler}!MeshHandler@{MeshHandler}}
+\index{MeshHandler@{MeshHandler}!MeshHandler@{MeshHandler}}
+\subsubsection[{MeshHandler}]{\setlength{\rightskip}{0pt plus 5cm}template$<$UInt ORDER$>$ {\bf MeshHandler}$<$ ORDER $>$::{\bf MeshHandler} (Real $\ast$ {\em points}, \/  UInt $\ast$ {\em edges}, \/  UInt $\ast$ {\em triangles}, \/  UInt $\ast$ {\em neighbors}, \/  UInt {\em num\_\-nodes}, \/  UInt {\em num\_\-edges}, \/  UInt {\em num\_\-triangles})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classMeshHandler_a983560a8f515c91a25a13d7d14b751c2}
+
+
+A constructor. The constructor permits the initialization of the \hyperlink{structmesh}{mesh} from an R object constructed with the TriLibrary (our R wrapper for the \hyperlink{classTriangle}{Triangle} library) \hypertarget{classMeshHandler_a07339e31fd7550c9a9f8a99deba34074}{
+\index{MeshHandler@{MeshHandler}!MeshHandler@{MeshHandler}}
+\index{MeshHandler@{MeshHandler}!MeshHandler@{MeshHandler}}
+\subsubsection[{MeshHandler}]{\setlength{\rightskip}{0pt plus 5cm}template$<$UInt ORDER$>$ {\bf MeshHandler}$<$ ORDER $>$::{\bf MeshHandler} (Real $\ast$ {\em points}, \/  UInt $\ast$ {\em edges}, \/  UInt $\ast$ {\em triangles}, \/  UInt $\ast$ {\em neighbors}, \/  UInt {\em num\_\-nodes}, \/  UInt {\em num\_\-edges}, \/  UInt {\em num\_\-triangles}, \/  bool {\em flag})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classMeshHandler_a07339e31fd7550c9a9f8a99deba34074}
+
+
+Another constructor. The constructor permits the initialization of the \hyperlink{structmesh}{mesh} from an R object constructed with the TriLibrary (our R wrapper for the \hyperlink{classTriangle}{Triangle} library) This constructor permit to put the flag\_\- = 1, so the \hyperlink{classADTree}{ADTree} associated to the \hyperlink{structmesh}{mesh} will be built and it's possible to use \hyperlink{classADTree}{ADTree} algorithm for point location 
+
+\subsection{Member Function Documentation}
+\hypertarget{classMeshHandler_ac101637668e7960b5ed960bb0d55a1af}{
+\index{MeshHandler@{MeshHandler}!findLocationNaive@{findLocationNaive}}
+\index{findLocationNaive@{findLocationNaive}!MeshHandler@{MeshHandler}}
+\subsubsection[{findLocationNaive}]{\setlength{\rightskip}{0pt plus 5cm}template$<$UInt ORDER$>$ {\bf Triangle}$<$ ORDER $\ast$3 $>$ {\bf MeshHandler}$<$ ORDER $>$::findLocationNaive ({\bf Point} {\em point}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classMeshHandler_ac101637668e7960b5ed960bb0d55a1af}
+
+
+A normal member returning the triangle on which a point is located. This method implements a simply research between all triangle of the \hyperlink{structmesh}{mesh} 
+\begin{DoxyParams}{Parameters}
+\item[{\em point}]the point we want to locate \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The triangle that contains the point 
+\end{DoxyReturn}
+\hypertarget{classMeshHandler_a2ebf0f4f46e7e74089ce40196d3ed596}{
+\index{MeshHandler@{MeshHandler}!findLocationTree@{findLocationTree}}
+\index{findLocationTree@{findLocationTree}!MeshHandler@{MeshHandler}}
+\subsubsection[{findLocationTree}]{\setlength{\rightskip}{0pt plus 5cm}template$<$UInt ORDER$>$ {\bf Triangle}$<$ ORDER $\ast$3 $>$ {\bf MeshHandler}$<$ ORDER $>$::findLocationTree (const {\bf Point} \& {\em point}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classMeshHandler_a2ebf0f4f46e7e74089ce40196d3ed596}
+
+
+A normal member returning the triangle on which a point is located. This method implements a \hyperlink{classADTree}{ADTree} algorithm 
+\begin{DoxyParams}{Parameters}
+\item[{\em point}]the point we want to locate \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The triangle that contains the point 
+\end{DoxyReturn}
+\hypertarget{classMeshHandler_a0d4dfa615986d926bfff90432aee863b}{
+\index{MeshHandler@{MeshHandler}!findLocationWalking@{findLocationWalking}}
+\index{findLocationWalking@{findLocationWalking}!MeshHandler@{MeshHandler}}
+\subsubsection[{findLocationWalking}]{\setlength{\rightskip}{0pt plus 5cm}template$<$UInt ORDER$>$ {\bf Triangle}$<$ ORDER $\ast$3 $>$ {\bf MeshHandler}$<$ ORDER $>$::findLocationWalking (const {\bf Point} \& {\em point}, \/  const vector$<$ {\bf Triangle}$<$ ORDER $\ast$3 $>$ $>$ \& {\em starting\_\-triangles}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classMeshHandler_a0d4dfa615986d926bfff90432aee863b}
+
+
+A normal member returning the triangle on which a point is located. This method implements a Visibility Walk Algorithm (further details in: Walking in a triangulation, Devillers et al) 
+\begin{DoxyParams}{Parameters}
+\item[{\em point}]the point we want to locate \item[{\em starting\_\-triangles}]a vector of points that specifies the poposed starting points for the walking algorithm \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The triangle that contains the point 
+\end{DoxyReturn}
+\hypertarget{classMeshHandler_a346871cf4c2aa8082e81a76dd7ef5373}{
+\index{MeshHandler@{MeshHandler}!getEdge@{getEdge}}
+\index{getEdge@{getEdge}!MeshHandler@{MeshHandler}}
+\subsubsection[{getEdge}]{\setlength{\rightskip}{0pt plus 5cm}template$<$UInt ORDER$>$ {\bf Edge} {\bf MeshHandler}$<$ ORDER $>$::getEdge (Id {\em id})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classMeshHandler_a346871cf4c2aa8082e81a76dd7ef5373}
+
+
+A normal member returning an \hyperlink{classEdge}{Edge}. 
+\begin{DoxyParams}{Parameters}
+\item[{\em id}]an Id argument \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The edge with the specified id 
+\end{DoxyReturn}
+\hypertarget{classMeshHandler_a67e2b3d75d30094f0a5a8d72213bdca3}{
+\index{MeshHandler@{MeshHandler}!getNeighbors@{getNeighbors}}
+\index{getNeighbors@{getNeighbors}!MeshHandler@{MeshHandler}}
+\subsubsection[{getNeighbors}]{\setlength{\rightskip}{0pt plus 5cm}template$<$UInt ORDER$>$ {\bf Triangle}$<$ ORDER $\ast$3 $>$ {\bf MeshHandler}$<$ ORDER $>$::getNeighbors (Id {\em id\_\-triangle}, \/  UInt {\em number}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classMeshHandler_a67e2b3d75d30094f0a5a8d72213bdca3}
+
+
+A normal member returning the Neighbors of a triangle. 
+\begin{DoxyParams}{Parameters}
+\item[{\em id}]the id of the triangle \item[{\em number}]the number of the vertex \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The triangle that has as an edge the one opposite to the specified vertex 
+\end{DoxyReturn}
+\hypertarget{classMeshHandler_a5657ecd9b4774575759ba816156e1586}{
+\index{MeshHandler@{MeshHandler}!getPoint@{getPoint}}
+\index{getPoint@{getPoint}!MeshHandler@{MeshHandler}}
+\subsubsection[{getPoint}]{\setlength{\rightskip}{0pt plus 5cm}template$<$UInt ORDER$>$ {\bf Point} {\bf MeshHandler}$<$ ORDER $>$::getPoint (Id {\em id})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classMeshHandler_a5657ecd9b4774575759ba816156e1586}
+
+
+A normal member returning a \hyperlink{classPoint}{Point}. 
+\begin{DoxyParams}{Parameters}
+\item[{\em id}]an Id argument \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The point with the specified id 
+\end{DoxyReturn}
+\hypertarget{classMeshHandler_abdd94b51080aa42f94b22bc1b472c072}{
+\index{MeshHandler@{MeshHandler}!getTree@{getTree}}
+\index{getTree@{getTree}!MeshHandler@{MeshHandler}}
+\subsubsection[{getTree}]{\setlength{\rightskip}{0pt plus 5cm}template$<$UInt ORDER$>$ const {\bf ADTree}$<${\bf Triangle}$<$ORDER $\ast$ 3$>$ $>$\& {\bf MeshHandler}$<$ ORDER $>$::getTree () const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classMeshHandler_abdd94b51080aa42f94b22bc1b472c072}
+
+
+A normal member returning the \hyperlink{classADTree}{ADTree}. \begin{DoxyReturn}{Returns}
+The \hyperlink{classADTree}{ADTree}, the nodes contain the index of the triangle in the \hyperlink{structmesh}{mesh} 
+\end{DoxyReturn}
+\hypertarget{classMeshHandler_affac7f7128b883d6a0a6cdd19c1bd9bd}{
+\index{MeshHandler@{MeshHandler}!getTriangle@{getTriangle}}
+\index{getTriangle@{getTriangle}!MeshHandler@{MeshHandler}}
+\subsubsection[{getTriangle}]{\setlength{\rightskip}{0pt plus 5cm}template$<$UInt ORDER$>$ {\bf Triangle}$<$ ORDER $\ast$3 $>$ {\bf MeshHandler}$<$ ORDER $>$::getTriangle (Id {\em id}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classMeshHandler_affac7f7128b883d6a0a6cdd19c1bd9bd}
+
+
+A normal member returning a \hyperlink{classTriangle}{Triangle}. 
+\begin{DoxyParams}{Parameters}
+\item[{\em id}]an Id argument \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The triangle with order coerent to that of the \hyperlink{structmesh}{mesh} with the specified id 
+\end{DoxyReturn}
+\hypertarget{classMeshHandler_a545391eb9397b594ecbe0adae69a6887}{
+\index{MeshHandler@{MeshHandler}!num\_\-edges@{num\_\-edges}}
+\index{num\_\-edges@{num\_\-edges}!MeshHandler@{MeshHandler}}
+\subsubsection[{num\_\-edges}]{\setlength{\rightskip}{0pt plus 5cm}template$<$UInt ORDER$>$ UInt {\bf MeshHandler}$<$ ORDER $>$::num\_\-edges () const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classMeshHandler_a545391eb9397b594ecbe0adae69a6887}
+
+
+A normal member returning an unsigned integer value. \begin{DoxyReturn}{Returns}
+The number of edges in the \hyperlink{structmesh}{mesh} 
+\end{DoxyReturn}
+\hypertarget{classMeshHandler_aad0e450b97d6cf690d31b850524e7cda}{
+\index{MeshHandler@{MeshHandler}!num\_\-nodes@{num\_\-nodes}}
+\index{num\_\-nodes@{num\_\-nodes}!MeshHandler@{MeshHandler}}
+\subsubsection[{num\_\-nodes}]{\setlength{\rightskip}{0pt plus 5cm}template$<$UInt ORDER$>$ UInt {\bf MeshHandler}$<$ ORDER $>$::num\_\-nodes () const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classMeshHandler_aad0e450b97d6cf690d31b850524e7cda}
+
+
+A normal member returning an unsigned integer value. \begin{DoxyReturn}{Returns}
+The number of nodes in the \hyperlink{structmesh}{mesh} 
+\end{DoxyReturn}
+\hypertarget{classMeshHandler_a8c6a559cb5b5024d591c1edaa560a111}{
+\index{MeshHandler@{MeshHandler}!num\_\-triangles@{num\_\-triangles}}
+\index{num\_\-triangles@{num\_\-triangles}!MeshHandler@{MeshHandler}}
+\subsubsection[{num\_\-triangles}]{\setlength{\rightskip}{0pt plus 5cm}template$<$UInt ORDER$>$ UInt {\bf MeshHandler}$<$ ORDER $>$::num\_\-triangles () const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classMeshHandler_a8c6a559cb5b5024d591c1edaa560a111}
+
+
+A normal member returning an unsigned integer value. \begin{DoxyReturn}{Returns}
+The number of nodes in the \hyperlink{structmesh}{mesh} 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+src/mesh.hpp\item 
+src/mesh\_\-imp.hpp\end{DoxyCompactItemize}

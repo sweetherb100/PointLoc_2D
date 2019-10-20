@@ -1,0 +1,8 @@
+useDynLib(PointLoc)
+
+import(rgl)
+export(create.MESH.2D,refine.MESH.2D)
+export(plot.TRIMESH2D)
+export(Test_Point, Test_Triangle, Test_Box, Test_Domain, Test_TreeNode, Test_TreeHeader, Test_ADTree, Test_MeshHandler)
+export(Point.Locator, Point.Locator.Naive, Point.Locator.Walk)
+S3method(plot,TRIMESH2D)
